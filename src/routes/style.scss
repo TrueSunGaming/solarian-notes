@@ -1,0 +1,22 @@
+* {
+    color: var(--text);
+    font-family: var(--font);
+}
+
+a {
+    color: var(--link);
+}
+
+body {
+    background-color: var(--bg);
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+hr {
+    border-color: var(--hr);
+}
