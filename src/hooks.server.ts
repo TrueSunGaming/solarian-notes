@@ -1,3 +1,3 @@
-import { startMongo } from "$lib/db/mongo";
+import { startMongo } from "$db/mongo";
 
 startMongo().then(() => console.log("Mongo started."));
