@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /solarian-notes
+    
+#============================================================#
+##                 Spring Config                            ##
+#============================================================#
+spring:
+  application:
+    name: solarian-notes
+  jackson:
+    default-property-inclusion: non-null
+
+#============================================================#
+##                 Log Config                               ##
+#============================================================#
+logging:
+  level:
+    solariannotes: DEBUG
