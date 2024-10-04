@@ -1,5 +1,5 @@
 import type { InsertOneResult } from "mongodb";
-import type { User } from "../schema/User";
+import type { User } from "$lib/data/User";
 import { users } from "../collections/users";
 
 export function addUser(user: User): Promise<InsertOneResult<User>> {
