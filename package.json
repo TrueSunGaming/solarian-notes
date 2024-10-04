@@ -28,7 +28,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"mongodb": "^6.9.0",
-		"node-fetch": "^3.3.2"
+		"mongodb": "^6.9.0"
 	}
 }
