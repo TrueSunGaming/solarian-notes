@@ -4,6 +4,7 @@ import { getUserByID } from "$lib/db/access/user/getUserByID";
 import type { WithId } from "mongodb";
 import { DataReference } from "./DataReference";
 import { getTaskByID } from "$lib/db/access/task/getTaskByID";
+import { getFolderByID } from "$lib/db/access/folder/getFolderByID";
 
 export class DataReferenceServer<T extends DataType> extends DataReference<T> {
     override get value(): Promise<WithId<DataTypeInstance<T>> | null> {
@@ -13,6 +14,9 @@ export class DataReferenceServer<T extends DataType> extends DataReference<T> {
             
             case DataType.Task:
                 return getTaskByID(this.id) as Promise<WithId<DataTypeInstance<T>> | null>;
+            
+            case DataType.Folder:
+                return getFolderByID(this.id) as Promise<WithId<DataTypeInstance<T>> | null>;
             
             default:  
                 throw new Error("Invalid DataType in DataReferenceServer");
