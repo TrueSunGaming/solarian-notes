@@ -1,6 +1,6 @@
 import { DataType } from "./DataType";
 import type { DataTypeInstance } from "./DataTypeInstance";
-import { getUserByID } from "$lib/db/user/getUserByID";
+import { getUserByID } from "$lib/db/access/user/getUserByID";
 import type { WithId } from "mongodb";
 import { DataReference } from "./DataReference";
 
