@@ -1,5 +1,5 @@
 export enum DataType {
-    Folder = "Folder",
-    Task = "Task",
-    User = "User"
+    Folder = "folder",
+    Task = "task",
+    User = "user"
 }
