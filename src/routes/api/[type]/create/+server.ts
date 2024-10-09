@@ -31,7 +31,7 @@ export const POST: RequestHandler = async ({ params, request }): Promise<Respons
             checkResult = checkProperties(req, [
                 ["title", "string"],
                 ["description", "string"],
-                ["subtasks", isTypedArray(isDataReferenceDetailed)],
+                ["subtasks", isTypedArray("string")],
                 ["subtaskRequirement", "string"]
             ], "Task");
             if (checkResult) return error(400, checkResult);
