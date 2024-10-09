@@ -21,7 +21,8 @@ export const POST: RequestHandler = async ({ params, request }): Promise<Respons
     switch(params.type) {
         case DataType.User:
             checkResult = checkProperties(req, [
-                ["email", "string"]
+                ["name", "string"],
+                ["userFolder", "string"]
             ], "User");
             if (checkResult) return error(400, checkResult);
 
