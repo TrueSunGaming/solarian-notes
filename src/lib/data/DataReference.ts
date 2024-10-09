@@ -3,6 +3,7 @@ import type { ObjectIdCompatible } from "$lib/db/ObjectIdCompatible";
 import type { WithId } from "mongodb";
 import type { DataTypeInstance } from "./DataTypeInstance";
 import type { DataReferenceData } from "./DataReferenceData";
+import type { MaybePromise } from "$lib/util/MaybePromise";
 
 export abstract class DataReference<T extends DataType> implements DataReferenceData<T> {
     id: ObjectIdCompatible;
@@ -13,5 +14,5 @@ export abstract class DataReference<T extends DataType> implements DataReference
         this.type = type;
     }
 
-    abstract get value(): Promise<WithId<DataTypeInstance<T>> | null>;
+    abstract get value(): MaybePromise<WithId<DataTypeInstance<T>> | null>;
 }
