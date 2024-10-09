@@ -1,4 +1,4 @@
-import type { DataReferenceData } from "../DataReferenceData";
+import type { DataReferenceData } from "../ref/DataReferenceData";
 import { checkProperties } from "$lib/util/checkProperties";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

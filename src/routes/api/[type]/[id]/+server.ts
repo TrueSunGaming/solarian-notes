@@ -1,6 +1,6 @@
 import { error, json, type RequestHandler } from "@sveltejs/kit";
 import { DataType } from "$lib/data/DataType";
-import { DataReferenceServer } from "$lib/data/DataReferenceServer";
+import { DataReferenceServer } from "$lib/data/ref/DataReferenceServer";
 import type { DataTypeInstance } from "$lib/data/DataTypeInstance";
 import type { WithId } from "mongodb";
 

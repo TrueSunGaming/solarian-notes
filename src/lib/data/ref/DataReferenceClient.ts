@@ -1,7 +1,7 @@
-import type { DataType } from "./DataType";
+import type { DataType } from "../DataType";
 import { DataReference } from "./DataReference";
 import type { WithId } from "mongodb";
-import type { DataTypeInstance } from "./DataTypeInstance";
+import type { DataTypeInstance } from "../DataTypeInstance";
 
 export class DataReferenceClient<T extends DataType> extends DataReference<T> {
     override get value(): Promise<WithId<DataTypeInstance<T>> | null> {
