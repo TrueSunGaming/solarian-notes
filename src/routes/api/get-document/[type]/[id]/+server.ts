@@ -4,7 +4,6 @@ import { DataReferenceServer } from "$lib/data/DataReferenceServer";
 import type { DataTypeInstance } from "$lib/data/DataTypeInstance";
 import type { WithId } from "mongodb";
 
-
 export const GET: RequestHandler = async ({ params }): Promise<Response> => {
     if (!params.id) return error(400);
     if (!params.type) return error(400);
